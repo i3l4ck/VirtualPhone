@@ -1,27 +1,32 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Scrolling Nav](http://startbootstrap.com/template-overviews/scrolling-nav/)
+# This is very simple demo how API work!
 
-[Scrolling Nav](http://startbootstrap.com/template-overviews/scrolling-nav/) is an unstyled one page starter template with a collapsing, smooth scrolling navigation bar for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
+1- Register and get API key in https://izinumber.com/member/userapi
+2- Edit config.php with your API Key
+3- Built awsome project with Send SMS, Receive SMS and Voice.
 
-## Getting Started
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/scrolling-nav/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git`
-* Fork the repo
+Some of example
 
-## Bugs and Issues
+#########Check Balance
+URL: http://userapi.izinumber.com/balance/APIKEY
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/scrolling-nav/).
 
-## Creator
+######### List all your Numbers
+URL: http://userapi.izinumber.com/mynumbers/APIKEY
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+######### Check Number
+URL: http://userapi.izinumber.com/mynumbers/APIKEY/check/xxxxxxxx 
+With: xxxxxxxx is the number you want to get sms and voice, number only. 
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Example: 
+http://userapi.izinumber.com/mynumbers/APIKEY/check/PHONENUMBER
 
-## Copyright and License
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/gh-pages/LICENSE) license.
+######### Send SMS
+URL: http://userapi.izinumber.com/sms/APIKEY/to/xxxxxxxxxxxx/msg/yyyyyyyyyyyyyy 
+With: xxxxxxxx is the number you want send SMS to, number only. 
+yyyyyyyyyyyy is the message. 
+
+Example: 
+http://userapi.izinumber.com/sms/APIKEY/to/PHONENUMBER/msg/Hello, This is test sms message
